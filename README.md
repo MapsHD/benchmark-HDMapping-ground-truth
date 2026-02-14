@@ -13,6 +13,8 @@ cp <download_folder>/map_gt_0.01.pcd .
 cp <download_folder>/map_gt_0.05.pcd .
 ```
 
+movie how to convert data
+
 ## Step 2 (download reference mobile mapping LiDAR data, incluidng LiVOX MID360)
 Download the dataset `reg-1.bag` by clicking [link](https://cloud.cylab.be/public.php/dav/files/7PgyjbM2CBcakN5/reg-1.bag) (it is part of [Bunker DVI Dataset](https://charleshamesse.github.io/bunker-dvi-dataset)) 
 
