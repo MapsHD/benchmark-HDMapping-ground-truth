@@ -47,4 +47,6 @@ chmod +x mandeye-convert.sh
 ./mandeye-convert.sh ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360_ROS1/reg-1.bag ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth ros1-to-hdmapping
 ```
 
+## Step 6 (prepare ground truth data using 'lidar_odometry_step_1')
+Follow procedure in this movie.
  
