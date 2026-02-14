@@ -25,7 +25,7 @@ Movie how to convert data from *.pcd to *.laz  [[movie]](https://youtu.be/IxEMLG
 ## Step 2 (download reference mobile mapping LiDAR data that includes LiVOX MID360)
 Download the dataset `reg-1.bag` by clicking [link](https://cloud.cylab.be/public.php/dav/files/7PgyjbM2CBcakN5/reg-1.bag) (it is part of [Bunker DVI Dataset](https://charleshamesse.github.io/bunker-dvi-dataset)) 
 
-Create 'ground_truth/MobileMappingSystemLivoxMID360_ROS1' folder and copy donloaded data with following commands:
+Create 'ground_truth/MobileMappingSystemLivoxMID360_ROS1' folder and copy downloaded data with following commands:
 
 ```shell
 mkdir -p ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360_ROS1
