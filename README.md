@@ -30,22 +30,21 @@ cp <download_folder>/reg-1.bag .
 ```shell
 mkdir -p ~/hdmapping-benchmark
 cd ~/hdmapping-benchmark
-git clone https://github.com/MapsHD/livox_bag_aggregate.git --recursive
+git clone https://github.com/MapsHD/mandeye_to_bag.git --recursive
 ```
 
 ## Step 4 (build docker)
 ```shell
-cd ~/hdmapping-benchmark/livox_bag_aggregate
-docker build -t livox_bag_aggregate_noetic .
+cd ~/hdmapping-benchmark/mandeye_to_bag
+docker build -t mandeye-ws_noetic --target ros1 .
 ```
 
 ## Step 5 (run docker)
 ```shell
-cd ~/hdmapping-benchmark/livox_bag_aggregate
-mkdir -p cd ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth
-cd ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth
-~/hdmapping-benchmark/livox_bag_aggregate/livox_bag.sh ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360/reg-1.bag .
+mkdir -p ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth
+cd ~/hdmapping-benchmark/mandeye_to_bag
+chmod +x mandeye-convert.sh 
+./mandeye-convert.sh ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360/reg-1.bag ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth ros1-to-hdmapping
 ```
-
 
  
