@@ -18,11 +18,11 @@ movie how to convert data
 ## Step 2 (download reference mobile mapping LiDAR data that includes LiVOX MID360)
 Download the dataset `reg-1.bag` by clicking [link](https://cloud.cylab.be/public.php/dav/files/7PgyjbM2CBcakN5/reg-1.bag) (it is part of [Bunker DVI Dataset](https://charleshamesse.github.io/bunker-dvi-dataset)) 
 
-Create 'ground_truth/MobileMappingSystemLivoxMID360' folder and copy donloaded data with following commands:
+Create 'ground_truth/MobileMappingSystemLivoxMID360_ROS1' folder and copy donloaded data with following commands:
 
 ```shell
-mkdir -p ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360
-cd ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360
+mkdir -p ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360_ROS1
+cd ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360_ROS1
 cp <download_folder>/reg-1.bag .
 ```
 
@@ -44,7 +44,7 @@ docker build -t mandeye-ws_noetic --target ros1 .
 mkdir -p ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth
 cd ~/hdmapping-benchmark/mandeye_to_bag
 chmod +x mandeye-convert.sh 
-./mandeye-convert.sh ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360/reg-1.bag ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth ros1-to-hdmapping
+./mandeye-convert.sh ~/hdmapping-benchmark/data/ground_truth/MobileMappingSystemLivoxMID360_ROS1/reg-1.bag ~/hdmapping-benchmark/data/ground_truth/HDMappingGroundTruth ros1-to-hdmapping
 ```
 
  
