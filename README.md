@@ -14,6 +14,14 @@ cp <download_folder>/map_gt_0.01.pcd .
 cp <download_folder>/map_gt_0.05.pcd .
 ```
 
+Convert 'map_gt_0.01.pcd' file to map_gt_0.01.laz with foillowing command
+
+```shell
+cd <hdmapping folder with executables> //follow installation instruction at https://github.com/MapsHD/HDMapping
+pcd_to_laz.exe ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus/map_gt_0.01.pcd ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus/map_gt_0.01.laz 
+```
+
+Alternatively You can use CloudeCompare.
 Movie how to convert data from *.pcd to *.laz  [[movie]](https://youtu.be/IxEMLGVlDdQ).
 
 ## Step 2 (download reference mobile mapping LiDAR data that includes LiVOX MID360)
