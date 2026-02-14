@@ -7,7 +7,7 @@ Create 'ground_truth/TLS-FARO-Focus' folder and copy donloaded data with followi
 
 ```shell
 mkdir -p ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus
-cd ~/hdmapping-benchmark/data/ground_truth/TLS
+cd ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus
 cp <download_folder>/map_gt.pcd .
 cp <download_folder>/map_gt_0.01.pcd .
 cp <download_folder>/map_gt_0.05.pcd .
