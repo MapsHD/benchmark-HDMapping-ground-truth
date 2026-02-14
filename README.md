@@ -2,16 +2,14 @@
 With this instruction You will prepare ground truth trajectory.
 
 ## Step 1 (download reference ground truth TLS data)
-Download the dataset 'map_gt.pcd', 'map_gt_0.01.pcd' and 'map_gt_0.05.pcd' from 
+Download the dataset 'map_gt_0.01.pcd' from 
 [link](https://charleshamesse.github.io/bunker-dvi-dataset/docs/download.html) and convert it to '*.laz' using CloudCompare [link](https://www.cloudcompare.org/).
 Create 'ground_truth/TLS-FARO-Focus' folder and copy donloaded data with following commands:
 
 ```shell
 mkdir -p ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus
 cd ~/hdmapping-benchmark/data/ground_truth/TLS-FARO-Focus
-cp <download_folder>/map_gt.pcd .
 cp <download_folder>/map_gt_0.01.pcd .
-cp <download_folder>/map_gt_0.05.pcd .
 ```
 
 Convert 'map_gt_0.01.pcd' file to map_gt_0.01.laz with foillowing command
