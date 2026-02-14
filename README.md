@@ -1,4 +1,5 @@
 # benchmark-HDMapping-ground-truth
+With this instruction You will prepare ground truth trajectory.
 
 ## Step 1 (download reference ground truth TLS data)
 Download the dataset 'map_gt.pcd', 'map_gt_0.01.pcd' and 'map_gt_0.05.pcd' from 
